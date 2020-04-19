@@ -1,0 +1,48 @@
+mat-toolbar-row{
+    display: flex;
+    height:100px;
+    background-color: white;
+}
+
+.brand, .brand p{
+    padding: 20px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 1em;
+}
+
+.ham{
+    padding: 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.spacer{
+    display: inline-block;
+    flex: 1 1 auto;
+}
+
+.sidebar{
+    background-color: white;
+    width:100px;
+}
+
+.navcontainer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+}
+
+.menuHolder{
+    padding: 20px;
+}
+
+.menuBtn:hover,button[mat-menu-item]:hover{
+    background-color: coral;
+    color:white;
+    transition: all 0.4s ease;
+}
