@@ -12,6 +12,10 @@ mat-toolbar-row{
     line-height: 1em;
 }
 
+.brand{
+    cursor: pointer;
+}
+
 .ham{
     padding: 20px;
     display: inline-block;
