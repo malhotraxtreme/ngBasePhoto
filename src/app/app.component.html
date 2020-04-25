@@ -2,8 +2,20 @@
 
 
 
-    <mat-sidenav class="sidebar" #nav mode='push' position="end">
-        Start
+    <mat-sidenav class="sidebar" #nav mode='over' position="end">
+        <p class="mt-4">
+            
+        </p>
+        <a  mat-flat-button class="menuLinkSide">
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+        </a>
+        <!-- <mat-menu #portFolioMenu="matMenu">
+            <button mat-menu-item disableRipple routerLink="/weddings">Weddings</button>
+            <button mat-menu-item disableRipple routerLink="/engagements">Engagements</button>
+            <button mat-menu-item disableRipple routerLink="/corporate">Corporate</button>
+            <button mat-menu-item disableRipple routerLink="/landscapes">Landscapes</button>
+        </mat-menu> -->
     </mat-sidenav>
     <!-- <mat-sidenav position="end">End</mat-sidenav> -->
 
@@ -42,7 +54,7 @@
                     <button mat-button class="menuBtn" disableRipple routerLink="/learn">
                         Learn
                     </button>
-                    <button mat-button class="menuBtn" disableRipple  routerLink="/contact">
+                    <button mat-button class="menuBtn" disableRipple routerLink="/contact">
                         Contact
                     </button>
                 </div>
@@ -52,6 +64,25 @@
 
 
         <router-outlet></router-outlet>
+
+        <footer class="container-fluid footRow text-center">
+            <div class="container">
+                <div class="row pt-4 pb-4">
+                    <div class="col-md-4">
+                        a
+                    </div>
+                    <div class="col-md-4">
+                        a
+                    </div>
+                    <div class="col-md-4">
+                        a
+                    </div>
+                </div>
+            </div>
+            <p class="light">
+                ALL CONTENT COPYRIGHT © 2020 AKASH
+            </p>
+        </footer>
 
     </mat-sidenav-content>
 </mat-sidenav-container>

@@ -29,7 +29,7 @@ mat-toolbar-row{
 
 .sidebar{
     background-color: white;
-    width:100px;
+    width:180px;
 }
 
 .navcontainer{
@@ -49,4 +49,19 @@ mat-toolbar-row{
     background-color: coral;
     color:white;
     transition: all 0.4s ease;
+}
+
+.footRow{
+    margin-top: 25px;
+    padding-bottom: 5px;
+    box-shadow: 0px -2px 4px lightgray;
+}
+
+.light{
+    font-size: 0.7em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menuLinkSide{
+    width: 100%;
 }

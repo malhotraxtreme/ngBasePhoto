@@ -20,7 +20,7 @@ export class AppComponent {
       this.isMobile = true;
     }
     else{
-      this.isMobile =false;
+      this.isMobile =true;    /// Change it bak to false later/....
     }
   }
 
