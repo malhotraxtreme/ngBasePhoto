@@ -10,7 +10,7 @@ const exportArray = [
   MatMenuModule,
   MatSidenavModule,
   MatToolbarModule,
-  MatIconModule
+  MatIconModule,
 ];
 
 @NgModule({

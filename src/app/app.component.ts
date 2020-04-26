@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  public portfolioToggle = false;
+  public informationToggle = false;
+
   constructor() {
     this.setMobile();
     
@@ -20,7 +23,18 @@ export class AppComponent {
       this.isMobile = true;
     }
     else{
-      this.isMobile =true;    /// Change it bak to false later/....
+      this.isMobile =false;
+    }
+  }
+
+  public toggleSideMenuItem(e:any){
+    switch(e){
+      case 'portfolio':
+        this.portfolioToggle = !this.portfolioToggle;
+        break;
+      case 'information':
+        this.informationToggle = !this.informationToggle;
+        break;
     }
   }
 

@@ -1,0 +1,7 @@
+.material-icons {
+    transition: transform .35s;
+}
+
+.animate {
+    transform: rotate(-360deg);
+}

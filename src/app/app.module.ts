@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialImportModule } from './material-import/material-import.module';
 
-
+ 
 import { AppComponent } from './app.component';
 import { InvestmentComponent } from './investment/investment.component';
 import { ContactComponent } from './contact/contact.component';
@@ -18,7 +18,7 @@ import { EngagementsComponent } from './engagements/engagements.component';
 import { CorporateComponent } from './corporate/corporate.component';
 import { LandscapesComponent } from './landscapes/landscapes.component';
 import { NotfoundComponent } from './notfound/notfound.component';
-
+import { MatAnimatedIconComponent } from './mat-animated-icon/mate-animated-icon.component';
 
 
 const appRoutes: Routes = [
@@ -92,7 +92,8 @@ const appRoutes: Routes = [
     EngagementsComponent,
     CorporateComponent,
     LandscapesComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    MatAnimatedIconComponent
   ],
   imports: [
     BrowserModule,
