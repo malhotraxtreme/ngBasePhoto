@@ -3,6 +3,8 @@
 
 
     <mat-sidenav class="sidebar" #nav mode='over' position="end">
+        
+        <!-- Mobile Section -->
         <p class="mt-4">
 
         </p>
@@ -14,8 +16,8 @@
             <mat-icon>collections</mat-icon>
             <span>Portfolio</span>
             <mat-icon class="caretLocation">
-                <mat-animated-icon start="keyboard_arrow_left" end="keyboard_arrow_down" colorStart="black" colorEnd="black"
-                    [animate]="portfolioToggle"></mat-animated-icon>
+                <mat-animated-icon start="keyboard_arrow_left" end="keyboard_arrow_down" colorStart="black"
+                    colorEnd="black" [animate]="portfolioToggle"></mat-animated-icon>
             </mat-icon>
         </a>
         <ng-container *ngIf="portfolioToggle">
@@ -29,14 +31,14 @@
             <mat-icon>info</mat-icon>
             <span>Information</span>
             <mat-icon class="caretLocation">
-                <mat-animated-icon start="keyboard_arrow_left" end="keyboard_arrow_down" colorStart="black" colorEnd="black"
-                    [animate]="informationToggle"></mat-animated-icon>
+                <mat-animated-icon start="keyboard_arrow_left" end="keyboard_arrow_down" colorStart="black"
+                    colorEnd="black" [animate]="informationToggle"></mat-animated-icon>
             </mat-icon>
         </a>
         <ng-container *ngIf="informationToggle">
             <a mat-flat-button class="subMenuLinkSide" routerLink="/investment" (click)="nav.toggle()">Investment</a>
             <a mat-flat-button class="subMenuLinkSide" routerLink="/process" (click)="nav.toggle()">Working Process</a>
-            <a mat-flat-button class="subMenuLinkSide" routerLink="/about" (click)="nav.toggle()">About Us</a>
+            <a mat-flat-button class="subMenuLinkSide" routerLink="/about" (click)="nav.toggle()">About Me</a>
             <a mat-flat-button class="subMenuLinkSide" routerLink="/faq" (click)="nav.toggle()">F.A.Q s</a>
         </ng-container>
 
@@ -49,10 +51,9 @@
             <span>Contact</span>
         </a>
     </mat-sidenav>
-    <!-- <mat-sidenav position="end">End</mat-sidenav> -->
 
 
-
+<!-- Desktop Section -->
     <mat-sidenav-content>
         <mat-toolbar class="toolbar">
             <mat-toolbar-row>
@@ -73,7 +74,7 @@
                     <mat-menu #infoMenu="matMenu">
                         <button mat-menu-item disableRipple routerLink="/investment">Investment</button>
                         <button mat-menu-item disableRipple routerLink="/process">Working Process</button>
-                        <button mat-menu-item disableRipple routerLink="/about">About Us</button>
+                        <button mat-menu-item disableRipple routerLink="/about">About Me</button>
                         <button mat-menu-item disableRipple routerLink="/faq">F.A.Q s</button>
                     </mat-menu>
 
@@ -99,14 +100,22 @@
 
         <footer class="container-fluid footRow text-center">
             <div class="container">
-                <div class="row pt-4 pb-4">
+                <div class="row pt-4 ">
                     <div class="col-md-4">
 
                     </div>
                     <div class="col-md-4">
-                        <button mat-icon-button>
-                            <mat-icon>people</mat-icon>
-                          </button>
+
+                        <button mat-icon-button disableRipple>
+                            <span class="fa fa-2x fa-instagram socialicon"></span>
+                        </button>
+                        <button mat-icon-button disableRipple>
+                            <span class="fab fa-2x fa-500px socialicon"></span>
+                        </button>
+                        <button mat-icon-button disableRipple>
+                            <span class="far fa-2x fa-envelope socialicon"></span>
+                        </button>
+
                     </div>
                     <div class="col-md-4">
 
