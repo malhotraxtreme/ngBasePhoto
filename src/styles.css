@@ -13,7 +13,7 @@ mat-sidenav-content { background-color: white;}
     flex:1;
 }
 
-/* .pageheading{
+.pageheading{
     font-size: 3em;
     text-align: left;
     font-weight: 600;
@@ -31,12 +31,12 @@ mat-sidenav-content { background-color: white;}
 }
 
 .pagesubheading{
-    font-size: 1.8em;
+    font-size: 1.4em;
     text-align: left;
     font-weight: 400;
     margin: 20px 25px 5px;
     font-family: 'Open Sans Condensed', sans-serif;
-} */
+}
 
 *:focus{
     border: 0;

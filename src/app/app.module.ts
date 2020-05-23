@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialImportModule } from './material-import/material-import.module';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 
  
 import { AppComponent } from './app.component';
@@ -99,6 +100,8 @@ const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialImportModule,
+    ReactiveFormsModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
