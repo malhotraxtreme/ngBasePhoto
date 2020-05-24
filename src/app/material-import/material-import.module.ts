@@ -8,6 +8,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 const exportArray = [
   MatButtonModule,
@@ -18,7 +19,8 @@ const exportArray = [
   MatStepperModule,
   MatFormFieldModule,
   MatSelectModule,
-  MatInputModule 
+  MatInputModule,
+  MatExpansionModule
 ];
 
 @NgModule({

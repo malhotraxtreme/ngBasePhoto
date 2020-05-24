@@ -1,7 +1,27 @@
 <div class="container page">
     <div class="row">
-        <div class="col-md-12">
-            FAQ
+        <div class="col-md-10 offset-md-1 mt-2 mb-4">
+            <div class="headings mt-2 mb-5 pb-2">
+                <div class="pageheadinglight">
+                    F.A.Q's
+                </div>
+                <div class="pagesubheading">
+                    
+                </div>
+            </div>
+
+            <mat-accordion multi>
+                <mat-expansion-panel *ngFor="let faq of faqs" class="m-2">
+                  <mat-expansion-panel-header class="accordionHeader">
+                    <mat-panel-title>
+                      {{faq.ques}}
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <p class="m-2 p-2 faqanswer">{{faq.ans}}</p>
+                </mat-expansion-panel>
+              </mat-accordion>
+
+
         </div>
     </div> 
 </div>

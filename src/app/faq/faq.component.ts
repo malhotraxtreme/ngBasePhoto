@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FaqComponent implements OnInit {
 
-  constructor() { }
+  public faqs = [];
+  constructor() {
+    this.faqs = [{
+      'ques':'question',
+      'ans':'answer'
+    },
+    {
+      'ques':'question2',
+      'ans':'answer2'
+    },
+  ];
+   }
 
   ngOnInit(): void {
   }
+
+
 
 }
