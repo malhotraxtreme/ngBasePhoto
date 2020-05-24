@@ -1,15 +1,17 @@
-mat-expansion-panel-header{
-    background: lightcoral;
+mat-expansion-panel mat-expansion-panel-header{
+    background: mistyrose;
 }
 
+
 mat-expansion-panel-header:hover, mat-expansion-panel-header:focus{
-    background: coral !important;
+    background: mistyrose !important;
 }
 
 mat-expansion-panel-header{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1.1em;
+    color:white !important;
 }
 
 .faqanswer{
@@ -17,4 +19,9 @@ mat-expansion-panel-header{
     letter-spacing: 2px;
     font-size: 1.1em;
     font-weight: bold;
+}
+
+.headings{
+    border-bottom: 2px solid coral;
+    display: inline-block;
 }

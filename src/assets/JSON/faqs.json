@@ -1,8 +1,53 @@
 {
     "resp":[
         {
-            "ques":"",
+            "ques":"How do we get the Photos ?",
+            "ans":"We use Google drive and have backups in hard drives to ensure your memories stay alive forever. After the shoot, the Client is sent edited digital files (JPG's) over the cloud drive.They are full resolution, print-ready files."
+        },
+        {
+            "ques":"Can I choose the photos to edit ?",
+            "ans":"Yes Of Course ! There's no fun in not getting to choose the photos where you look the best."
+        },
+        {
+            "ques":"Do I need to provide an Advance Deposit amount ?",
+            "ans":"We require an advance deposit amount to reserve the dates for you. It's done to ensure that the photographer does not book any overlapping events. It's a non refundable portion among the total charges and is due as soon as you want the date reserved."
+        },
+        {
+            "ques":"I called/Emailed/Messaged. Does that mean I'm booked ?",
+            "ans":"We require a portion of the charges as Advanced Deposit ( NON REFUNDABLE ) to book you for the date. You can choose to book whenever you're confirmed with the dates."
+        },
+        {
+            "ques":"Coverage beyond Ottawa ?",
+            "ans":"Yes. We're open to travel however the charges would be an add on to the photography charges."
+        },
+        {
+            "ques":"Need all the RAW files",
+            "ans":"Nope. Sorry"
+        },
+        {
+            "ques":"Can I print my Photos ? How about Printing Rights ?",
+            "ans":"We provide full printing rights for all clients with the full resolution shots"
+        },
+        {
+            "ques":"What gear do you use ?",
+            "ans":"Please check the About section of the page for a full list."
+        },
+        {
+            "ques":"?",
+            "ans":""
+        },
+        {
+            "ques":"?",
+            "ans":""
+        },
+        {
+            "ques":"?",
+            "ans":""
+        },
+        {
+            "ques":"?",
             "ans":""
         }
+
     ]
 }

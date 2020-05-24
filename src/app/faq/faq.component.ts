@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import jsonFaqs from '../../assets/JSON/faqs.json';
 
 @Component({
   selector: 'app-faq',
@@ -9,15 +10,7 @@ export class FaqComponent implements OnInit {
 
   public faqs = [];
   constructor() {
-    this.faqs = [{
-      'ques':'question',
-      'ans':'answer'
-    },
-    {
-      'ques':'question2',
-      'ans':'answer2'
-    },
-  ];
+    this.faqs = jsonFaqs.resp;
    }
 
   ngOnInit(): void {
