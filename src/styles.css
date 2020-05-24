@@ -20,6 +20,7 @@ mat-sidenav-content { background-color: white;}
     letter-spacing: 3px;
     margin: 40px 20px 5px 10px;
     font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
 }
 
 .pageheadinglight{
@@ -28,6 +29,7 @@ mat-sidenav-content { background-color: white;}
     font-weight: 500;
     margin: 40px 20px 5px 10px;
     font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
 }
 
 .pagesubheading{
@@ -38,7 +40,7 @@ mat-sidenav-content { background-color: white;}
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-*:focus{
+*:focus,button:focus{
     border: 0;
     text-decoration: none;
     list-style-image: none;

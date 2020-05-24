@@ -13,12 +13,13 @@ export class ContactComponent implements OnInit {
   constructor(private fb: FormBuilder) {
 
     this.contactForm = this.fb.group({
-      name: [ '' , Validators.required],
-      email: [ '' , Validators.required],
-      phone:['' ,  Validators.required],
-      datesRequired:[ '' , Validators.required],
+      name: [ '' ],
+      email: [ '' , Validators.email],
+      phone:['' ,  Validators.pattern],
+      datesRequired:[ '' ],
       sessionType:[ '' ],
-      description: [ '' , Validators.required]
+      description: [ '' ],
+      reference:['']
 
     });
     
@@ -26,6 +27,13 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
 
+  }
+
+  public onSubmit(){
+    if(this.contactForm.valid){
+      console.log(this.contactForm.value);
+    }
+    
   }
 
 }

@@ -1,7 +1,7 @@
 <div class="container page">
     <div class="row">
-        <div class="col-md-12 mt-5">
-            <div class="headings mt-4 mb-5 pb-2">
+        <div class="col-md-10 offset-md-1 mt-2 mb-4">
+            <div class="headings mt-2 mb-5 pb-2">
                 <div class="pageheadinglight">
                     Let's Start Your Wonderful Journey Together
                 </div>
@@ -9,34 +9,72 @@
                     Hit me up on Instagram or fill up the form and let me get back to you on first priority
                 </div>
             </div>
-            <div class="form">
+            <form class="form" [formGroup]="contactForm">
 
                 <div class="fieldDiv">
                     <mat-form-field appearance="outline" class="field">
-                        <mat-label>Input</mat-label>
-                        <input matInput type="date">
+                        <mat-label>Full Name</mat-label>
+                        <input matInput type="text" formControlName="name" placeholder="Ex. Jon Snow" required>
+                        <mat-error *ngIf="contactForm.controls.name.invalid">Name is Mandatory</mat-error>
                     </mat-form-field>
                 </div>
                 <div class="fieldDiv">
                     <mat-form-field appearance="outline" class="field">
-                        <mat-label>Select</mat-label>
-                        <mat-select>
-                            <mat-option value="option">Option</mat-option>
+                        <mat-label>Email ID</mat-label>
+                        <input matInput type="email" formControlName="email" placeholder="jon.snow11@starkmail.com" required>
+                        <mat-error *ngIf="contactForm.controls.email.invalid">Please provide a valid Email ID</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="fieldDiv">
+                    <mat-form-field appearance="outline" class="field">
+                        <mat-label>Contact Number</mat-label>
+                        <input matInput type="tel" formControlName="phone" placeholder="Ex. 123-123-1234" required pattern="^\d{3}-*\d{3}-*\d{4}$">
+                        <mat-error *ngIf="contactForm.controls.phone.invalid">Please enter a valid 10 digit contact number</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="fieldDiv">
+                    <mat-form-field appearance="outline" class="field">
+                        <mat-label>Date(s) Required</mat-label>
+                        <input matInput type="text" formControlName="datesRequired"
+                         placeholder="Estimated Date(s) of event Ex. 2nd August 2020 " required>
+                        <mat-error *ngIf="contactForm.controls.datesRequired.invalid">Date(s) are Mandatory</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="fieldDiv">
+                    <mat-form-field appearance="outline" class="field">
+                        <mat-label>Session type</mat-label>
+                        <mat-select formControlName="sessionType">
+                            <mat-option>--</mat-option>
+                            <mat-option value="Wedding">Wedding</mat-option>
+                            <mat-option value="Couple">Enagagement / Couple</mat-option>
+                            <mat-option value="Event">Event</mat-option>
+                            <mat-option value="Corporate">Corporate</mat-option>
+                            <mat-option value="Newborn">Newborn</mat-option>
+                            <mat-option value="Maternity">Pregnancy / Maternity</mat-option>
                         </mat-select>
                     </mat-form-field>
                 </div>
                 <div class="fieldDiv">
                     <mat-form-field appearance="outline" class="field">
-                        <mat-label>Textarea</mat-label>
-                        <textarea matInput></textarea>
+                        <mat-label>Description</mat-label>
+                        <textarea matInput formControlName="description" required></textarea>
+                        <mat-error *ngIf="contactForm.controls.description.invalid">Description is Mandatory</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="fieldDiv">
+                    <mat-form-field appearance="outline" class="field">
+                        <mat-label>How did you hear about me ?</mat-label>
+                        <input matInput type="text" formControlName="reference" placeholder="Optional">
                     </mat-form-field>
                 </div>
 
+                <div class="d-flex justify-content-center">
+                    <button mat-raised-button (click)="contactForm.reset()" class="submitSection m-2" style="background-color: coral;"><mat-icon class="mr-1">notes</mat-icon>Reset</button>
+                    <button mat-raised-button (click)="onSubmit()" class="submitSection m-2" style="background-color: seagreen;"><mat-icon class="mr-1">mail</mat-icon>Send</button>
+                </div>
 
-                <button mat-fab color="warn"><mat-icon>send</mat-icon></button>
 
-
-            </div>
+            </form>
         </div>
     </div>
 </div>
