@@ -1,16 +1,18 @@
 mat-expansion-panel mat-expansion-panel-header{
     background: mistyrose;
+    color:white; 
 }
 
 
 mat-expansion-panel-header:hover, mat-expansion-panel-header:focus{
-    background: mistyrose !important;
+    background: coral !important;
 }
 
 mat-expansion-panel-header{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1.1em;
+    padding:5px 10px;
     color:white !important;
 }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import  jsonResp  from '../../assets/JSON/prices.json'
 
 @Component({
   selector: 'app-investment',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InvestmentComponent implements OnInit {
 
-  constructor() { }
+  public packages = {};
+
+  constructor() { 
+    this.packages = jsonResp;
+    //console.log(this.packages,Object.keys(jsonResp));
+  }
 
   ngOnInit(): void {
   }

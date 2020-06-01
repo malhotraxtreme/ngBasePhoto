@@ -1,0 +1,55 @@
+.picarea{
+    background-color: lightyellow;
+    height: 200px;
+}
+
+.infoarea{
+    height: 200px;
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.pricearea{
+    display: flex;
+    height: 50px;
+    background-color: coral;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+.price{
+    font-size: 1.4em;
+    font-weight: bold;
+    color:white;
+}
+
+.package{
+    display: inline-block;
+    margin-bottom: 45px;
+}
+
+.packageContainer{
+    width: 100%;
+    display: flex;
+}
+
+.content{
+    border:1px solid lightgray;
+    transition: all 0.45s ease;
+}
+
+.content:hover{
+    border:1px solid black;
+    transform: scale(1.01);
+    box-shadow: 0 2px 7px lightgray;
+}
+
+.headingSection{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    /* text-decoration: underline;
+    text-decoration-color: coral; */
+}

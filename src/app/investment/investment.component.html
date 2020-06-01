@@ -1,7 +1,47 @@
 <div class="container page">
     <div class="row">
-        <div class="col-md-12">
-            Investment  > Material Tabs for Prices
+        <div class="col-md-12 mt-2 mb-4">
+            <div class="headings mb-5 pb-2 pr-5">
+                <div class="pageheadinglight">
+                    Investment
+                </div>
+                <div class="pagesubheading">
+                    We provide all covered packages for all kinds of budgets.
+                </div>
+            </div>   
         </div>
-    </div> 
+    </div>
+
+    <div class="packageContainer row" *ngFor="let pkgType of packages | keyvalue ">
+
+        <div class="headingSection mb-4 text-center col-sm-12">
+            {{pkgType.key| uppercase}}
+        </div>
+
+        <div class="package  col-sm-12 col-md-4" *ngFor="let pkg of packages[pkgType.key]">
+
+            <div class="content">
+                <div class="picarea">
+
+                </div>
+    
+                <div class="infoarea pt-4 pl-2">
+                    <ul>
+                        <li *ngFor="let bullet of pkg.desc.split(',')" class="m-2">
+                            {{bullet}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="pricearea">
+                    <div class="price">
+                        CAD 900
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+
+        
+    </div>
 </div>
