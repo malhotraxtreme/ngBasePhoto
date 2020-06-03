@@ -16,6 +16,19 @@ export class FaqComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public filterFaq(key:any){
+    key = key.toLowerCase();
+    this.faqs = jsonFaqs.resp;
+    this.faqs = this.faqs.filter((x)=>{
+      if (x.ques.toLowerCase().includes(key)) {
+        return true;
+      }
+      if (x.ans.toLowerCase().includes(key)) {
+        return true;
+      }
+    });
+  }
+
 
 
 }

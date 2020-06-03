@@ -9,6 +9,15 @@
 
         </div>
       </div>
+      <div class="col-md-12 text-center">
+        <div class="search ml-4">
+          <mat-form-field appearance="outline" color="warn" style="width:100%;">
+            <mat-label>Search</mat-label>
+            <input #searchInput matInput (keyup)="filterFaq(searchInput.value)" placeholder="Single Words Only..">
+            <mat-icon matSuffix>search</mat-icon>
+          </mat-form-field>
+        </div>
+      </div>
 
       <mat-accordion>
         <mat-expansion-panel *ngFor="let faq of faqs" class="ml-4">
