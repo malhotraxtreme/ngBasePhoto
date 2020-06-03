@@ -51,4 +51,9 @@ mat-sidenav-content { background-color: white;}
     min-height: 80vh;
 }
 
+.headings{
+    border-bottom: 2px solid coral;
+    display: inline-block;
+}
+
 
