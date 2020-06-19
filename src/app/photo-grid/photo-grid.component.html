@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row m-0 p-0">
+        <div class="col-md-4 m-0 p-0">
+            <div *ngFor="let photo of photosToDisplay1" class="p-1">
+                <img [src]="photo.path">
+            </div>
+        </div>
+        <div class="col-md-4  m-0 p-0">
+            <div *ngFor="let photo of photosToDisplay2" class="p-1">
+                <img [src]="photo.path">
+            </div>
+        </div>
+        <div class="col-md-4 m-0 p-0">
+            <div *ngFor="let photo of photosToDisplay3" class="p-1">
+                <img [src]="photo.path">
+            </div>
+        </div>
+        
+    </div>
+
+</div>

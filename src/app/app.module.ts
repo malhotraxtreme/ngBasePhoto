@@ -20,6 +20,7 @@ import { CorporateComponent } from './corporate/corporate.component';
 import { LandscapesComponent } from './landscapes/landscapes.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { MatAnimatedIconComponent } from './mat-animated-icon/mate-animated-icon.component';
+import { PhotoGridComponent } from './photo-grid/photo-grid.component';
 
 
 const appRoutes: Routes = [
@@ -94,7 +95,8 @@ const appRoutes: Routes = [
     CorporateComponent,
     LandscapesComponent,
     NotfoundComponent,
-    MatAnimatedIconComponent
+    MatAnimatedIconComponent,
+    PhotoGridComponent
   ],
   imports: [
     BrowserModule,
