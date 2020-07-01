@@ -7,35 +7,59 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeddingsComponent implements OnInit {
 
-  public componentPath="../../assets/portfolio/weddings/";
-  public pics:any;
+  // public componentPath="../../assets/portfolio/weddings/";
+  public pics:any[];
   constructor() { }
 
   ngOnInit(): void {
     this.pics = [
     {
       name:"A1",
-      path:this.componentPath + "1.jpg",
+      path: 'https://source.unsplash.com/weekly?wedding'
     },
     {
-      name:"A2",
-      path:this.componentPath + "2.jpg",
+      name:"A1",
+      path: 'https://source.unsplash.com/weekly?bride'
     },
     {
-      name:"A3",
-      path:this.componentPath + "3.jpg",
+      name:"A1",
+      path: 'https://source.unsplash.com/weekly?groom'
     },
     {
-      name:"A4",
-      path:this.componentPath + "4.jpg",
+      name:"A1",
+      path: 'https://source.unsplash.com/weekly?mom'
     },
     {
-      name:"A5",
-      path:this.componentPath + "5.jpg",
+      name:"A1",
+      path: 'https://source.unsplash.com/weekly?decoration'
     },
     {
-      name:"A6",
-      path:this.componentPath + "6.jpg",
+      name:"A1",
+      path: 'https://source.unsplash.com/weekly?party'
+    },
+    {
+      name:"A1",
+      path: 'https://source.unsplash.com/weekly?wine'
+    },
+    {
+      name:"A1",
+      path: 'https://source.unsplash.com/weekly?ribbon'
+    },
+    {
+      name:"A1",
+      path: 'https://source.unsplash.com/weekly?gifts'
+    },
+    {
+      name:"A1",
+      path: 'https://source.unsplash.com/weekly?wedding,card'
+    },
+    {
+      name:"A1",
+      path: 'https://source.unsplash.com/weekly?wedding,ring'
+    },
+    {
+      name:"A1",
+      path: 'https://source.unsplash.com/weekly?newly,married'
     }
   ]
   }
